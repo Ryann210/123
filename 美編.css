@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile h1 {
+  margin-top: 15px;
+  font-size: 2em;
+}
+
+.profile p {
+  color: #666;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content section {
+  flex: 1 1 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.content p, .content li {
+  color: #555;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content section {
+    flex: 1 1 100%;
+  }
+}
